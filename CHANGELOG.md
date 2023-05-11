@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.1.1] (2023-05-11)
+
+- AWS recommendes xvd[f-p] for Redhat PV so default value for device name changed from xvdz to xvdf.
+
 ## [v1.1.0] (2023-05-11)
 
 - Added support for throughput

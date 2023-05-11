@@ -32,7 +32,7 @@ Terraform module to create AWS EC2 Volumes
 variable accountID { default = "123456789012"}
 
 module "ec2_volume_instance1 {
-  source   = "git::https://github.com/virsas/mod-terraform-aws-ec2-volume.git?ref=v1.1.0"
+  source   = "git::https://github.com/virsas/mod-terraform-aws-ec2-volume.git?ref=v1.1.1"
 
   profile = "default"
   accountID = var.accountID
