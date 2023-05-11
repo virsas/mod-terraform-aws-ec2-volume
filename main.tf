@@ -14,6 +14,7 @@ resource "aws_ebs_volume" "vss" {
 
   type                  = var.type
   iops                  = var.type == "io1" || var.type == "io2" || var.type == "gp3" ? var.iops : ""
+  throughput            = var.type == "gp3" ? var.throughput : null
   multi_attach_enabled  = var.type == "io1" || var.type == "io2" ? var.multi_attach : false
 
   encrypted             = var.encrypted

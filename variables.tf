@@ -62,6 +62,11 @@ variable "iops" {
   type        = number
   default     = null
 }
+variable "throughput" {
+  description = "The throughput that thevolume supports. This value is available only for type gp3. In MiB/s"
+  type        = number
+  default     = null
+}
 variable "multi_attach" {
   description = "Enable/Disable the option to mount the volume to multiple instances. By default this value is false. This value is available only for type io1 and io2"
   type        = bool

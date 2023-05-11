@@ -23,6 +23,7 @@ Terraform module to create AWS EC2 Volumes
 - **device_name** - Name of the device as shown in Linux or Windows. By default xvdz
 - **force_detach** - If true, volume will be detached even if it is in use. This can result in data loss. Defaults to false
 - **stop_instance_before_detaching** - If set to true, volume will be detached only if the instance is stopped. Defaults to false
+- **throughput** - The throughput that thevolume supports. This value is available only for type gp3. In MiB/s
 
 ## Example
 
@@ -31,7 +32,7 @@ Terraform module to create AWS EC2 Volumes
 variable accountID { default = "123456789012"}
 
 module "ec2_volume_instance1 {
-  source   = "git::https://github.com/virsas/mod-terraform-aws-ec2-volume.git?ref=v1.0.0"
+  source   = "git::https://github.com/virsas/mod-terraform-aws-ec2-volume.git?ref=v1.1.0"
 
   profile = "default"
   accountID = var.accountID
