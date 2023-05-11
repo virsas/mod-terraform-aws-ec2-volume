@@ -98,9 +98,9 @@ variable "instances" {
   default     = []
 }
 variable "device_name" {
-  description = "Name of the device as shown in Linux or Windows. By default xvdz"
+  description = "Name of the device as shown in Linux or Windows. By default xvdf"
   type        = string
-  default     = "xvdz"
+  default     = "xvdf"
 }
 variable "force_detach" {
   description = "If true, volume will be detached even if it is in use. This can result in data loss. Defaults to false"
